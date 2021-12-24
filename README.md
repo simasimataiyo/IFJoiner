@@ -19,10 +19,10 @@ OSC通信に対応したコントローラやアプリをインストールし�
 # Install
 <img src="readme_image/install.png" width="60%">
 
-1. Release PageからZipファイルをダウンロード
+1. [Releases Page](https://github.com/simasimataiyo/IFJoiner/releases)からzipファイルをダウンロード
    
 2. Blenderを起動しトップバーから「Edit」→「Preference」を開く
-3. Preferenceウィンドウ左側メニューから「Addon」→ウィンドウ右上「Install」ボタンをクリックしダウンロードしたZipファイルをインストール
+3. Preferenceウィンドウ左側メニューから「Addon」→ウィンドウ右上「Install」ボタンをクリックしダウンロードしたzipファイルをインストール
 4. 「Community」が選択された状態で**Interface: I/F Joiner**がアドオンリストに追加されていること確認したら，チェックを入れて有効化する．
 
 
@@ -64,7 +64,7 @@ OSCサーバが起動した状態でOSCメッセージを受信するとアド�
 
 <img src="readme_image/add_message_map.png" width="60%">
 
-1. I/FJoinerのPreferenceを表示し，Message Mapsの**「Add Message Map」** をクリックして割り当て設定を一つ追加します．
+1. I/FJoinerのPreferenceを表示し，Message Mapsの **「Add Message Map」** をクリックして割り当て設定を一つ追加します．
 
 2. 追加されたボックスの入力欄に機能を割り当てたいメッセージのアドレスパターンを入力します．
 3. 左端の三角形をクリックするとメニューが展開します．「Add」をクリックして実行するオペレータを一つ追加します．
@@ -89,7 +89,10 @@ https://docs.blender.org/api/current/bpy.ops.html
 
 <img src="readme_image/save_and_load_preference.png" width="60%">
 
-Message Mapの割り当てを編集したら，**必ず「Save」をクリック**してPreference Fileを保存してください．次回起動時は保存したファイルから自動的に設定が読み込まれます．
+Message Mapの割り当てを編集したら，**必ず「Save」をクリック**してPreference Fileを保存してください．
+
+また左下ハンバーガーメニューの「Save Preference」でPreference Fileのファイルパスを保存すると，次回起動時は保存したファイルから自動的に設定が読み込まれます．**初回起動時は必ず「Save Preference」をクリック**してください．
+
 
 「Load」からも保存したPreference Fileを読み込めます．バックアップや割り当ての共有に利用できます．
 
