@@ -1,0 +1,38 @@
+{
+   "osc_message": "/key",
+   "message_type": "MS",
+   "show_expanded": true,
+   "map_id": 0,
+   "map_items": [
+      {
+         "min_value": [
+            1.0,
+            0.0,
+            0.0
+         ],
+         "max_value": [
+            1.0,
+            0.0,
+            0.0
+         ],
+         "exec_ops_name": "ifj.send_key_press",
+         "exec_ops_args": "key=\"a\"",
+         "map_item_id": 0
+      },
+      {
+         "min_value": [
+            0.0,
+            0.0,
+            0.0
+         ],
+         "max_value": [
+            0.0,
+            0.0,
+            0.0
+         ],
+         "exec_ops_name": "ifj.send_key_release",
+         "exec_ops_args": "key=\"a\"",
+         "map_item_id": 1
+      }
+   ]
+}

@@ -1,0 +1,23 @@
+{
+   "osc_message": "/brushsize",
+   "message_type": "MS",
+   "show_expanded": true,
+   "map_id": 0,
+   "map_items": [
+      {
+         "min_value": [
+            0.0,
+            0.0,
+            0.0
+         ],
+         "max_value": [
+            1.0,
+            0.0,
+            0.0
+         ],
+         "exec_ops_name": "wm.context_set_int",
+         "exec_ops_args": "data_path='tool_settings.unified_paint_settings.size', value=arg[0]*500, relative=False",
+         "map_item_id": 0
+      }
+   ]
+}
