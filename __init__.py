@@ -58,7 +58,7 @@ bl_info = {
     'warning': '',
     'support': 'COMMUNITY',
     'wiki_url': '',
-    'tracker_url': 'https://github.com/simasimataiyo/IFJointer',
+    'tracker_url': 'https://github.com/simasimataiyo/IFJoiner',
     'category': 'Interface'
 }
 
