@@ -6,6 +6,7 @@
 受信したOSCメッセージに応じてオペレータ（bpy.ops）を実行するアドオンです．
 OSC通信に対応したコントローラやアプリをインストールしたスマートフォンを使用してBlenderを操作することが可能になります．
 
+同時開発しているAndroidコントローラ化アプリ[Mocopa](https://github.com/simasimataiyo/Mocopa)は当アドオンと併せた使用がおすすめです．
 
 # Feature
 - OSCメッセージの受信
