@@ -51,7 +51,8 @@ class IFJ_OT_OSCCommunicator(bpy.types.Operator):
     
     # 受け取ったメッセージをqueueに貯めこむ
     def callback(self, address, *args):
-        print(address, args)
+        t = time.time()
+        print(address, args, t, sep=",")
         self.q.put( [address, args], block=True, timeout=None )
 
     # オペレータ発動処理
@@ -70,10 +71,11 @@ class IFJ_OT_OSCCommunicator(bpy.types.Operator):
             
             # トリガーが全てtrueならオペレータ実行
             if true_count == len(arg) or true_count == 3:
-                try:
-                    exec( 'bpy.ops.' + mmi.exec_ops_name + '(' + mmi.exec_ops_args + ')' )
-                except:
-                    self.report({'ERROR'}, '(bThreeIF)Failed execute operator')
+                exec( 'bpy.ops.' + mmi.exec_ops_name + '(' + mmi.exec_ops_args + ')' )
+                # try:
+                #     exec( 'bpy.ops.' + mmi.exec_ops_name + '(' + mmi.exec_ops_args + ')' )
+                # except:
+                #     self.report({'ERROR'}, '(bThreeIF)Failed execute operator')
  
     #bpy.opsコールバック
     def exec_operator(self, item, messagemaps):
@@ -497,7 +499,7 @@ class IFJ_OT_LoadMessageMaps(bpy.types.Operator):
         for mm in mms_dict.values():
             message_map = mms.add()
             message_map.osc_message = mm['osc_message']
-            message_map.message_type = mm['message_type']
+            # message_map.message_type = mm['message_type']
             message_map.show_expanded = mm['show_expanded']
             message_map.map_id = mm['map_id']
 
